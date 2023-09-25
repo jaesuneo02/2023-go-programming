@@ -15,4 +15,10 @@ func main() {
 		log.Fatal(err)
 	}
 	fmt.Println(inputScore)
+	if inputScore >= 90{
+		grade := "A grade!"
+	} else {
+		grade := "BCDE grade~"
+	}
 }
+	
