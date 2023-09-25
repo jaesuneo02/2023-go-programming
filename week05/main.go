@@ -6,6 +6,8 @@ import (
 	"log"
 	"math/rand"
 	"os"
+	"strconv"
+	"strings"
 	"time"
 )
 
@@ -17,10 +19,19 @@ func main() {
 
 	reader := bufio.NewReader(os.Stdin)
 	fmt.Print("Input guess nuber : ")
-	inputNumber, err := reader.ReadString('\n')
-	if err = nil {
+	inputNumberString, err := reader.ReadString('\n')
+	if err != nil {
 		log.Fatal(err)
 	}
-	
+	inputNumberString = strings.TrimSpace(inputNumberString)
+	inputNumber, err := strconv.Atoi(inputNumberString)
+	if err != nil {
+		log.Fatal(err)
+	}
+	if inputNumber < answer{
+		fmt.Println("Guess number is lower then answer") // Answer is higher~
+	} else if inputNumber > answer{
+		fmt.Println("Guess number is higher then answer") // Answer is lower
+	}
 }
 	
