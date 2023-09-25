@@ -21,10 +21,12 @@ func main() {
 	if err != nil{
 		log.Fatal(err)
 	}
-	if inputScore >= 90 { //mismatched types string and untyped int
-		grade := "A grade!"
+	var grade string
+	if inputScore >= 90 { 
+		grade = "A grade!"
 	} else {
-		grade := "BCDE grade~"
+		grade = "under A grade~"
 	}
+	fmt.Println("you got " + grade)
 }
 	
