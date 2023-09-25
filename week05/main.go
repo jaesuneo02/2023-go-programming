@@ -32,10 +32,9 @@ func main() {
 		}
 		if inputNumber == answer {
 			fmt.Println("Great U got number. congratulations~") // Answer is higher~
-			
+			break;
 
-		}
-		else if inputNumber < answer{
+		} else if inputNumber < answer{
 			fmt.Println("Guess number is lower then answer") // Answer is higher~
 		} else if inputNumber > answer{
 			fmt.Println("Guess number is higher then answer") // Answer is lower
