@@ -18,7 +18,7 @@ func main() {
 	fmt.Println(answer)
 
 	reader := bufio.NewReader(os.Stdin)
-	for i :=0; i< 10; i++{
+	for i :=0; i< 10; i++ {
 		fmt.Println("You have", 10-i, "chances~")
 		fmt.Print("Input guess nuber : ")
 		inputNumberString, err := reader.ReadString('\n')
@@ -30,7 +30,12 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		if inputNumber < answer{
+		if inputNumber == answer {
+			fmt.Println("Great U got number. congratulations~") // Answer is higher~
+			
+
+		}
+		else if inputNumber < answer{
 			fmt.Println("Guess number is lower then answer") // Answer is higher~
 		} else if inputNumber > answer{
 			fmt.Println("Guess number is higher then answer") // Answer is lower
