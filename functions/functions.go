@@ -58,6 +58,8 @@ func PrimeRange(a int , b int){
 // 소수 판정 및 구간 소수 프로그램 v.1.7
 func main(){
 	var menu int
+	const s string = "sdfasfasdfsdafsda"
+	fmt.Println(s)
 	for true{
 		fmt.Print("MENU 1) 소수판정 2) 구간 소수판정 0) 종료 : ")
 		_, err := fmt.Scanln(&menu)

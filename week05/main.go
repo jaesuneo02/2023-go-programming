@@ -39,7 +39,6 @@ func main() {
 		} else if inputNumber > answer{
 			fmt.Println("Guess number is higher then answer") // Answer is lower
 		}
-}
-	
+	}
 }
 	

@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"math"
 	"reflect"
+	"strings"
 )
 
 func main() {
@@ -39,16 +41,16 @@ func main() {
 	fmt.Println(float32(a) > b)
 
 
-	// fmt.Println(reflect.TypeOf('z'))			// rune, int32
-	// fmt.Println(reflect.TypeOf(99))			
-	// fmt.Println(reflect.TypeOf(2.7))			
-	// fmt.Println(reflect.TypeOf(false))			
-	// fmt.Println(reflect.TypeOf("go!"))	
-	// fmt.Println('A', 'a', '0', '김', '인', '하', '\n')// 65, 97, 48, 44608  , 10
-	// fmt.Println(math.Floor(3.17))
-	// fmt.Println(math.Ceil(3.17))
-	// fmt.Println(strings.Title("오픈소스 프로그래밍~"))
-	// fmt.Println(strings.Title("open source\t programming~\n\"go\"!"))
+	fmt.Println(reflect.TypeOf('z'))			// rune, int32
+	fmt.Println(reflect.TypeOf(99))			
+	fmt.Println(reflect.TypeOf(2.7))			
+	fmt.Println(reflect.TypeOf(false))			
+	fmt.Println(reflect.TypeOf("go!"))	
+	fmt.Println('A', 'a', '0', '김', '인', '하', '\n')// 65, 97, 48, 44608  , 10
+	fmt.Println(math.Floor(3.17))
+	fmt.Println(math.Ceil(3.17))
+	fmt.Println(strings.Title("오픈소스 프로그래밍~"))
+	fmt.Println(strings.Title("open source\t programming~\n\"go\"!"))
 	// fmt.Println(math.Floor("go!"))
 	// fmt.Println(strings.Title(3.14))
 }
