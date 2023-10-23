@@ -2,25 +2,11 @@ package main
 
 import "fmt"
 
-func double (n *int){
-	*n = *n * 2
-}
+
 func main(){
-
-	var a int = 6
-	double(&a)
-	fmt.Println(a)
+	a := 10
+	// b := 20 // var b int = 20
+	
+	c := &a
+	fmt.Printf("%T\n", c)
 }
-// package main
-
-// import "fmt"
-
-// func double (n int){
-// 	n = n * 2
-// }
-// func main(){
-
-// 	var a int = 6
-// 	double(a)
-// 	fmt.Println(a)
-// }
