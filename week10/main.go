@@ -8,9 +8,9 @@ import (
 
 func main() {
 	fmt.Println(mymath.MyPower(2,9))
-	fmt.Println(mymath.MyAbs(-99))
+	fmt.Println(mymath.myAbs(-99))
 	greeting.Hello()
-	fmt.Println(mymath.MyAbs(17))
+	fmt.Println(mymath.myAbs(17))
 	greeting.Hi()
 
 }
