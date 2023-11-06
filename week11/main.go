@@ -31,7 +31,15 @@ func main(){
 		i++
 	}
 
-	for prime := range primes{ // 값만 출력하려 했으나 인덱스가 출력됨
+	// for prime := range primes{ // 값만 출력하려 했으나 인덱스가 출력됨
+	// for idx ,prime := range primes{ // 컴파일 에러, idx 사용해야함
+	for _, prime := range primes{ 
 		fmt.Println(prime)
 	}
+
+	fmt.Printf("%#v\n",test)
+	fmt.Println(test)
+	fmt.Printf("%#v\n",primes)
+	fmt.Println(primes)
+
 }
