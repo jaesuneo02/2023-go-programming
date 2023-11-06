@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // literals  값자체
 
@@ -23,9 +25,13 @@ func main(){
 	// fmt.Println(primes[4]) // invalid argument : index  4 out of bounds[0:3]
 
 	i := 0
-	for i< 4{ // panic: runtime error: index out of range [3] with length 3
+	// for i < 4{ // panic: runtime error: index out of range [3] with length 3
+	for i < len(primes){ 
 		fmt.Println(primes[i]) 
 		i++
 	}
 
+	for prime := range primes{ // 값만 출력하려 했으나 인덱스가 출력됨
+		fmt.Println(prime)
+	}
 }
