@@ -18,4 +18,3 @@ func main() {
 	c[0] = "k"
 	fmt.Println(a,c)
 }
-
